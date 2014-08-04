@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title><%= @getPreparedTitle() %></title>
+	<%- @getBlock("meta").toHTML() %>
+	<%- @getBlock("styles").add(["/styles/reset.css", "/styles/style.css", "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"]).toHTML() %>
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrap">
+			<h1><a href="/"><img src="/images/logotipo.png" class="logo"></a></h1>
+			<aside class="contact">
+				<p><i class="fa fa-envelope fa-fw"></i> <a href="mailto:guto@live.ca">guto@live.ca</a></p>
+				<p><i class="fa fa-mobile fa-fw"></i><a href="tel:+5511971894839">(11) 971 894 839</a></p>
+				<p><a href="http://facebook.com/abreu.augusto/"><i class="fa fa-facebook-square fa-fw fa-lg"></i></a>
+				<a href="http://github.com/augustoabreu/"><i class="fa fa-github-square fa-fw fa-lg"></i></a></p>
+			</aside>
+		</div>
+	</header>
+
+	<%- @content %>
+	<%- @getBlock("scripts").add(["/vendor/jquery.js", "/scripts/main.js"]).toHTML() %>
+</body>
+</html>

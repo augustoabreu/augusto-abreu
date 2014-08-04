@@ -1,0 +1,37 @@
+---
+title: ""
+layout: "default"
+isPage: true
+---
+<section class="new wrap">
+	<h1>Trabalhos recentes</h1>
+	<ul>
+		<% for page in @getCollection("posts").toJSON(): %>
+		<li class="job">
+			<a href="<%= page.url %>"><img src="<%= page.img %>"></a>
+		</li>
+		<% end %>
+	</ul>
+</section>
+
+<footer class="wrap">
+	<section class="old">
+		<h2>Trabalhos antigos</h2>
+		<ul>
+			<% for page in @getCollection("olds").toJSON(): %>
+			<li class="jobs">
+				<%= page.date.getFullYear() %> | <a href="<%= page.url %>"><%= page.title %></a>
+			</li>
+			<% end %>
+		</ul>
+	</section>
+
+	<section class="personal-info">
+		<p>
+		<span class="fa-stack fa-fw">
+			<i class="fa fa-square fa-stack-2x"></i>
+			<i class="fa fa-info fa-stack-1x fa-inverse"></i>
+		</span> Olá! Me chamo Augusto Abreu, tenho 19 anos e sou desenvolvedor web e neste website procuro apresentar um pouco do meu trabalho.
+		</p>
+	</section>
+</footer>

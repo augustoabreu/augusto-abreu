@@ -1,0 +1,99 @@
+body {
+	font-family: Tahoma, Arial, Verdana;
+}
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+.main-header {
+	background: #000;
+	margin: 0;
+	display: table;
+	width: 100%;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+.logo {
+	float: left;
+}
+.contact {
+	float: right;
+	margin-top: 16px;
+	color:  #fff;
+}
+.contact p {
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 18px;
+}
+.contact a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 19px;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.contact a:hover {
+	text-decoration: none;
+	color: #ddd;
+}
+.active {
+	border-bottom: 1px solid  #fff;
+}
+.job {
+	background: #e1e1e1;
+	width: 265px;
+	height: 265px;
+	margin: 15px;
+	display: inline-block;
+	line-height: 250px;
+	text-align: center;
+}
+.job img {
+	max-width: 200px;
+	max-height: 200px;
+	vertical-align: middle;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 20px;
+}
+.imgs-job {
+	margin-top: 10px;
+}
+.img-job-g {
+	margin: 5px;
+}
+.subtitle {
+	font-weight: bolder;
+	font-size: 20px;
+	padding: 15px 0 5px 0;
+	margin-top: 30px;
+	border-top: 1px solid #ccc;
+}
+.info-job{
+	margin-bottom: 10px;
+}
+.old {
+	float: left;
+	width: 45%;
+}
+.old ul {
+	margin: 17px;
+}
+.personal-info {
+	float: right;
+	width: 50%;
+}
+.jobs {
+	list-style-type: none;
+}
+.jobs:before {
+	content: '»';
+}
+.jobs a{
+	color: #06f;
+}
